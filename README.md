@@ -18,12 +18,13 @@ A Colorado Board of Elections employee has given the following tasks below to co
 ---
 ## Election-Audit Results 
 The analysis of the election results show that: 
--There were *369,711* votes cast in the election.
--The county results were:
+1. There were *369,711* votes cast in the election.
+2. The counties that cast votes were Jefferson, Denver, and Arapahoe. 
+3. The county results were:
     -Jefferson made up *10.5%* of the votes with *38,855* number of votes. 
     -Denver made up *82.8%* of the votes with *306,055* number of votes. 
     -Arapahoe made up *6.7%* of the votes with *24,801* number of votes. 
-**-The county with the largest number of votes was Denver.** 
+4. The county with the largest number of votes was Denver.** 
 -The candidates were
     -Charles Casper Stockham
     -Diana DeGette
