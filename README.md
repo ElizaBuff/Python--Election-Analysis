@@ -2,7 +2,7 @@
 
 ## Overview of Project
 ### Purpose of Project
-In this project, I demonstrated my proficiency with various features in Python and Visual Studio (VS) Code: create and add lists, create and add keys and values to a dictonary, use decision statements to check a condition, apply membership and logical operators to decision statements, use repetition statements to iterate through a list or dictionary. To accomplish these goals, I was given a fictional situation and data set of approximatelly 40 thousand rows of data. 
+In this project, I demonstrated my proficiency with various features in Python and Visual Studio (VS) Code: create and add lists, create and add keys and values to a dictonary, use decision statements to check a condition, apply membership and logical operators to decision statements, use repetition statements to iterate through a list or dictionary. To accomplish these goals, I was given a fictional situation and data set of approximatelly 370 thousand rows of data. 
 ### Background of Project
 A Colorado Board of Elections employee has given the following tasks below to complete the election audit of a recent local congressional election. 
 
@@ -27,5 +27,14 @@ Arapahoe made up *6.7%* of the votes with *24,801* number of votes.
 
 ---
 ## Election-Audit Summary 
+This script is currently used to find a winning candidate based on the the popular vote for one race. However, a typical ballot will have more than one race so a script that outputs the winner for multiple races is an important modification. The script extracts the candidate name from each row using *candidate_name = row[2]* then uses a for loop to iterate through the row and store the information into a dictionary. A modified script could repeat this for code for each race or use another loop in order to iterate through each row with a unique race.  
 
-In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
+Another modification could be how the winner is determined. In some states, like New York, the winning candidate is chosen based on rank choice voting instead of popular vote. The script currenly determine if the votes is greater than the winning count.
+    if (votes > winning_count) and (vote_percentage > winning_percentage):
+         # If true then set winning_count = votes and winning_percent =
+         # vote_percentage.
+         winning_count = votes
+         winning_percentage = vote_percentage
+         # And, set the winning_candidate equal to the candidate's name.
+         winning_candidate = candidate_name
+
